@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--xsd文件作用：约束xml文件的书写格式-->
+    <!--  设置注解扫描路径，只能扫描service或者util-->
+    <context:component-scan base-package="com.city.model.service,com.util"/>
+    <context:component-scan base-package="com.emp.model.service"/>
+    <context:component-scan base-package="com.empy.model.service"/>
+    <context:component-scan base-package="com.depty.model.service"/>
+
+
+</beans>

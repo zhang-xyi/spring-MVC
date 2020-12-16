@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistentConfig">
+    <option name="historyConfigList">
+      <map>
+        <entry key="city">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src" />
+              <option name="daoName" value="CityDao" />
+              <option name="daoPackage" value="com.city.model.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src" />
+              <option name="modelName" value="City" />
+              <option name="modelPackage" value="com.city.bean" />
+              <option name="name" value="city" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="cid" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="city" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src" />
+              <option name="xmlPackage" value="com.city.model.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="t_depty">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src" />
+              <option name="daoName" value="DeptyDao" />
+              <option name="daoPackage" value="com.depty.model.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src" />
+              <option name="modelName" value="Depty" />
+              <option name="modelPackage" value="com.depty.bean" />
+              <option name="name" value="t_depty" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="DEPTNO" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="t_depty" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src" />
+              <option name="xmlPackage" value="com.depty.model.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="t_emp">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src" />
+              <option name="daoName" value="EmpDao" />
+              <option name="daoPackage" value="com.emp.model.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src" />
+              <option name="modelName" value="Emp" />
+              <option name="modelPackage" value="com.emp.bean" />
+              <option name="name" value="t_emp" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="EMPNO" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="t_emp" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src" />
+              <option name="xmlPackage" value="com.emp.model.dao" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="t_empy">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src" />
+              <option name="daoName" value="EmpyDao" />
+              <option name="daoPackage" value="com.empy.model.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src" />
+              <option name="modelName" value="Empy" />
+              <option name="modelPackage" value="com.empy.bean" />
+              <option name="name" value="t_empy" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="EMPID" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="t_empy" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src" />
+              <option name="xmlPackage" value="com.empy.model.dao" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

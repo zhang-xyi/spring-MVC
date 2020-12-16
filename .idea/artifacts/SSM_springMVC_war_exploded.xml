@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SSM-springMVC:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SSM_springMVC_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SSM-springMVC/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SSM-springMVC" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="springMVC" />
+          <element id="library" level="application" name="log4j" />
+          <element id="library" level="application" name="spring" />
+          <element id="library" level="application" name="Mybatis" />
+          <element id="library" level="application" name="jstl" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

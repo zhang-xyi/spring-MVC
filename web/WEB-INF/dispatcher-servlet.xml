@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <!--  设置注解扫描路径-->
+    <context:component-scan base-package="com.city.controller"/>
+    <context:component-scan base-package="com.emp.controller"/>
+    <context:component-scan base-package="com.empy.controller"/>
+    <context:component-scan base-package="com.depty.controller"/>
+    <context:component-scan base-package="com.logincontrol"/>
+
+
+    <!-- 打开springMVC映射器和适配器 识别@Controller等注解-->
+    <mvc:annotation-driven>
+        <!--配置fastjson解析器-->
+        <mvc:message-converters>
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json</value>
+                    </list>
+                </property>
+                <property name="features">
+                    <list>
+                        <value>WriteMapNullValue</value>
+                        <value>QuoteFieldNames</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/pages/" p:suffix=".jsp"/>
+
+    <!-- 以下路径不会被当控制器拦截，当静态资源处理 -->
+    <!--<mvc:resources mapping="/images/**" location="/image/" />
+    <mvc:resources mapping="/css/**" location="/css/" />
+    <mvc:resources mapping="/js/**" location="/js/" />-->
+
+    <!-- 或者由springmvc对请求进行分类，如果是静态资源，则交给DefaultServlet处理 -->
+    <!--<mvc:default-servlet-handler/>-->
+
+    <!--拦截器-->
+
+   <!-- <mvc:interceptors>
+        <mvc:interceptor>
+            &lt;!&ndash;拦截路径&ndash;&gt;
+            <mvc:mapping path="/**"/>
+            &lt;!&ndash;不拦截的路径&ndash;&gt;
+            <mvc:exclude-mapping path="/login"/>
+            <mvc:exclude-mapping path="/doLogin"/>
+            &lt;!&ndash;拦截器位置&ndash;&gt;
+            <bean class="com.util.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>-->
+
+
+</beans>
+
+
