@@ -29,7 +29,7 @@
         and DEPTNO = #{deptno,jdbcType=INTEGER}
       </if>
       <if test="dname != null and dname != ''">
-        and ENAME like concat ('%',#{dname,jdbcType=VARCHAR},'%')
+        and DNAME like concat ('%',#{dname,jdbcType=VARCHAR},'%')
       </if>
       <if test="loc != null and loc != ''">
         and LOC like concat ('%',#{loc,jdbcType=VARCHAR},'%')
